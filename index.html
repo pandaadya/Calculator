@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="cal-app">   
+        <h1 class="header">My Calculator</h1>
+     <form>
+        <input type="text" id="input">
+     </form>
+     <div class="keypad">
+       <button class="colorchange" id="clear" value="c" onClick="clearScreen()" >Clear</button>
+       <button class="colorchange" id="backspace" onClick="backspace('')" >⌫</button>
+       <button class="colorchange" name="/" value="/" onclick="show('/')"> / </button>
+
+       <button class="button"  id="7" value="7" onClick="show('7')">7</button>
+       <button class="button"  id="8" value="8" onClick="show('8')">8</button>
+       <button class="button"  id="9" value="9" onClick="show('9')">9</button>
+       <button class="colorchange"  id="*" value="*" onClick="show('*')" >*</button>
+
+       <button class="button"  id="4" value="4" onClick="show('4')">4</button>
+       <button class="button"  id="5" value="5" onClick="show('5')">5</button>
+       <button class="button"  id="6" value="6" onClick="show('6')">6</button>
+       <button class="colorchange"  id="-" value="-" onClick="show('-')">-</button>
+
+       <button class="button"  id="1" value="1" onClick="show('1')">1</button>
+       <button class="button"  id="2" value="2" onClick="show('2')">2</button>
+       <button class="button"  id="3" value="3" onClick="show('3')">3</button>
+       <button class="colorchange"  id="+" value="+" onClick="show('+')">+</button>
+
+       <button class="button"  id="00" value="00" onClick="show('00')">00</button>
+       <button class="button"  id="0" value="0" onClick="show('0')">0</button>
+       <button class="button"  id="." value="." onClick="show('.')">.</button>
+       <button class="colorchange"  id="=" value="=" onClick="solve()">=</button>
+     </div>
+  <script src="index.js"></script>
+   </div>
+
+</body>
+</html>
